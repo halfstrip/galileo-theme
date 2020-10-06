@@ -6,17 +6,15 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Travelog
-author: Your name
-author_link: https://whatever.you/like
-author_description: A few words to describe you & your face
-email: your-email@domain.com
+title: halfstrip.
+author: Amal Alim Maulana
+author_link: https://www.twitter.com/samalander_
+author_description: Silent, mostly.
+email: nolsatusatusatu@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  An archive for our writings and whatnot.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "https://halfstrip.github.com" # the base hostname & protocol for your site
 
 # Picturefill
 # A responsive image polyfill: http://scottjehl.github.io/picturefill/
@@ -25,10 +23,10 @@ picturefill: false
 # Typography
 # To use, publish a kit and enter the ID here. If you do not wish to use Typekit,
 # leave this ID blank
-typekit_kit_id: kwf5dox
+typekit_kit_id: 
 
 # Build settings
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
 markdown: kramdown
 permalink: pretty
 
