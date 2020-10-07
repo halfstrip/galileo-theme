@@ -22,10 +22,15 @@
         }
     }
 
+    .puisi {
+        margin-top: 5px;
+        font-size: 40px;
+    }
+
     .post-title {
         font-family: $title-font-family;
         display: block;
-        font-weight: 700;
+        font-weight: 500;
         font-size: $post-title-min-font-size;
         text-align: center;
         line-height: 1.4;
