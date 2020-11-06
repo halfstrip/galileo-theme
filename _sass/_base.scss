@@ -35,3 +35,68 @@ a {
     text-decoration: none;
     color: #443E40;
 }
+
+h4 {
+    text-indent: 50px;
+    margin-bottom: 0.3em;
+    font-size: 90%;
+    font-family: $base-font-family;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.glitch {
+
+	text-decoration: none;
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: 0;
+	
+	&:before, &:after {
+		display: block;
+		content: attr(data-text);
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		opacity: .8;
+	} &:after {
+		color: rgb(165, 144, 118);
+		z-index: -2;
+	} &:before {
+		color: rgb(40, 121, 121);
+		z-index: -1;
+	}
+	&:hover {
+		&:before {
+			animation: glitch .3s cubic-bezier(.25, .46, .45, .94) both 5
+		}
+		&:after {
+			animation: glitch .3s cubic-bezier(.25, .46, .45, .94) reverse both 5
+		}
+	}
+}
+
+@keyframes glitch {
+	0% {
+		transform: translate(0)
+	}
+	20% {
+		transform: translate(-5px, 5px)
+	}
+	40% {
+		transform: translate(-5px, -5px)
+	}
+	60% {
+		transform: translate(5px, 5px)
+	}
+	80% {
+		transform: translate(5px, -5px)
+	}
+	to {
+		transform: translate(0)
+	}
+}
